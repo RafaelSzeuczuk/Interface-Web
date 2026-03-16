@@ -1,0 +1,30 @@
+h1{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: right;
+    text-transform: lowercase;
+    text-decoration: line-through;
+    background-color: orange;
+}
+p{
+    text-indent: 40px;
+    font-size: 18px;
+    text-align: left;
+    font-variant: small-caps;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: aqua;
+}

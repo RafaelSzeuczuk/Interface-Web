@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Rafael Szeczuk André</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(/css/fundo_curriculo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: right bottom;
+        }
+
+        .cabecalho {
+            background-color: rgba(0, 0, 51, 0.8);
+            padding-top: 1px;
+        }
+
+        .cabecalho nav ul {
+            margin: 20px 8px 0 0;
+            text-align: right;
+        }
+
+        .cabecalho nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            border: 1px solid white;
+            margin-left: 16px;
+        }
+
+        .cabecalho nav a {
+            background-color: rgba(0, 0, 51, 0.5);
+            padding: 16px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .cabecalho nav a:hover {
+            background-color: rgba(0, 0, 102, 0.8);
+        }
+
+        .cabecalho-conteudo {
+            margin: 50px auto 30px;
+            width: 80%;
+            text-align: center;
+            color: white;
+        }
+
+        .cabecalho-conteudo h1 {
+            font-size: 70px;
+            text-shadow: 2px 2px 4px black;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: oblique;
+            font-weight: bold;
+            color: white;
+        }
+
+        .cabecalho-conteudo p {
+            font-size: 24px;
+            text-transform: uppercase;
+            display: inline-block;
+            width: 60%;
+            font-weight: bold;
+            padding: 14px;
+            border-bottom: 2px solid white;
+            background-color: rgba(0, 0, 51, 0.7);
+            font-variant: small-caps;
+        }
+
+        main {
+            width: 90%;
+            margin: auto;
+            max-width: 1400px;
+        }
+
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        article h2 {
+            border-bottom: 3px solid #000033;
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-top: 0;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: #000033;
+        }
+
+        article h3 {
+            font-size: 28px;
+            color: #000033;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 5px solid #000033;
+            padding-left: 15px;
+        }
+
+        article h4, article h5 {
+            font-size: 22px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        article p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .foto {
+            float: left;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            width: 200px;
+            border: 3px solid #000033;
+            border-radius: 8px;
+        }
+
+        .paragrafo_especial {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #000033;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .paragrafo_normal {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        mark {
+            background-color: #000033;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        hr {
+            border: 2px solid #000033;
+            margin: 25px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000033;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000066;
+        }
+
+        .btn {
+            background-color: #000033;
+            display: inline-block;
+            padding: 12px 16px;
+            border-radius: 6px;
+            width: fit-content;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+            border: 1px solid white;
+        }
+
+        .btn:hover {
+            background-color: #000066;
+            text-decoration: none;
+        }
+
+        .rodape {
+            color: white;
+            background-color: #000033;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            letter-spacing: 2px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .info-contato {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-contato p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .flex-linha {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .flex-linha article {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 900px) {
+            .flex-linha {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .flex-linha article {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <nav>
+            <ul>
+                <li><a href="#dados-pessoais">Dados Pessoais</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cabecalho-conteudo">
+            <h1>Currículo</h1>
+            <p>Rafael Szeczuk André</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="flex-linha">
+            <article id="dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                
+                <img class="foto" src='/css/foto3x4.png' alt='Foto 3x4 de Rafael Szeczuk André'>
+                
+                <p class="paragrafo_especial">
+                    <b><i>Rafael Szeczuk André</i></b> é estudante de Ciência da Computação, com interesse por tecnologia e desenvolvimento de software.
+                </p>
+                
+                <ul>
+                    <li><b>Endereço:</b> Rua Tapajós, 302, Vila Carli, Guarapuava - PR</li>
+                    <li><b>Nascimento:</b> 18/10/2006</li>
+                    <li><b>Nacionalidade:</b> Brasileiro</li>
+                    <li><b>CNH:</b> Categoria A & B</li>
+                </ul>
+            </article>
+
+            <article id="formacao">
+                <h2>Formação Acadêmica</h2>
+                
+                <h3>Formação</h3>
+                <ol>
+                    <li>Bacharelado em Ciência da Computação - UNICENTRO (2023-Atualmente)</li>
+                    <li>Ensino Médio - Colégio Estadual Visconde de Guarapuava (2020-2022)</li>
+                    <li>Inglês 4 - Programa Multicultural de Línguas da UNICENTRO (2023-2026)</li>
+                </ol>
+                
+                <hr>
+                
+                <h3 id="habilidades">Habilidades Técnicas</h3>
+                <p class="paragrafo_normal">
+                    Possuo conhecimentos em <mark>Python, Java e C++</mark>, além de desenvolvimento web e mobile.
+                </p>
+                
+                <h4>Outras Competências</h4>
+                <ul>
+                    <li>Banco de Dados SQL</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Comunicação eficaz</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="flex-linha">
+            <article id="contato">
+                <h2>Informações de Contato</h2>
+                
+                <div class="info-contato">
+                    <p><b>E-mail:</b> <a href="mailto:sezuki@yahoo.com">sezuki@yahoo.com</a></p>
+                    <p><b>Telefone:</b> (42) 98889-6894</p>
+                    <p><b>LinkedIn:</b> <a href="#"><i>linkedin.com/in/sezuki</i></a></p>
+                    <p><b>GitHub:</b> <a href="#"><i>github.com/sezuki</i></a></p>
+                </div>
+                
+                <a href="mailto:sezuki@yahoo.com" class="btn">Enviar e-mail</a>
+            </article>
+            
+            <article>
+                <h2>Objetivo</h2>
+                <p class="paragrafo_normal">
+                    Buscar oportunidade na área de tecnologia para aplicar conhecimentos em desenvolvimento de software e contribuir com soluções inovadoras.
+                </p>
+                
+                <hr>
+                
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Português - Nativo</li>
+                    <li>Inglês - Intermediário/Avançado</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Rafael Szeczuk André - Currículo Profissional</p>
+        <p>Atualizado em 2026</p>
+    </footer>
+</body>
+</html>

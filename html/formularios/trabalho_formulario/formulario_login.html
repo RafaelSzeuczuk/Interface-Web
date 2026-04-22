@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container-login {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .avatar-circulo {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #d1d5db;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo-login {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .caixa-entrada {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .icone-entrada {
+            position: absolute;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: grayscale(100%) opacity(0.6);
+            pointer-events: none;
+        }
+
+        .entrada-texto {
+            width: 100%;
+            padding: 14px 14px 14px 45px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 15px;
+            color: #333;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .entrada-texto:focus {
+            border-color: #1e5bb8;
+        }
+
+        .link-esqueci {
+            display: block;
+            text-align: left;
+            color: #1e5bb8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            margin-top: 5px;
+        }
+
+        .botao-entrar {
+            width: 100%;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: background-color 0.2s;
+        }
+
+        .botao-entrar:hover {
+            background-color: #2563eb;
+        }
+
+        .texto-registro {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .link-registrar {
+            color: #1e5bb8;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        @media (max-width: 480px) {
+            .container-login {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-login">
+    <div class="avatar-circulo">
+        <!-- Círculo vazio conforme a imagem -->
+    </div>
+    
+    <h1 class="titulo-login">Login</h1>
+
+    <form action="#" method="POST">
+        <div class="caixa-entrada">
+            <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/mail.svg');"></div>
+            <input type="email" name="email" class="entrada-texto" placeholder="Email" required>
+        </div>
+
+        <div class="caixa-entrada">
+            <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/lock.svg');"></div>
+            <input type="password" name="senha" class="entrada-texto" placeholder="Password" required>
+        </div>
+
+        <a href="#" class="link-esqueci">Forgot password?</a>
+
+        <button type="submit" class="botao-entrar">Sign In</button>
+
+        <p class="texto-registro">
+            Don't have an account? <a href="#" class="link-registrar">Register</a>
+        </p>
+    </form>
+</div>
+
+</body>
+</html>

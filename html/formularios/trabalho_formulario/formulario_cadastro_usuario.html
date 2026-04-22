@@ -55,8 +55,6 @@
             display: flex;
             align-items: center;
         }
-
-        /* Div para o ícone */
         .icone-entrada {
             position: absolute;
             left: 12px;
@@ -65,8 +63,6 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            /* Filtro para cor azul #1e5bb8 */
-            filter: invert(27%) sepia(85%) saturate(1488%) hue-rotate(201deg) brightness(91%) contrast(94%);
             pointer-events: none;
         }
 
@@ -103,21 +99,13 @@
             background-color: #164a96;
         }
 
-        @media (max-width: 480px) {
-            .grade-campos {
-                grid-template-columns: 1fr;
-            }
-            .container-formulario {
-                padding: 20px;
-            }
-        }
+
     </style>
 </head>
 <body>
 
 <div class="container-formulario">
     <form action="#" method="POST">
-        <!-- Personal Data -->
         <fieldset class="secao-dados">
             <legend class="titulo-secao">Personal Data</legend>
             <div class="grade-campos">
@@ -148,7 +136,6 @@
             </div>
         </fieldset>
 
-        <!-- Address -->
         <fieldset class="secao-dados">
             <legend class="titulo-secao">Address</legend>
             <div class="grade-campos">
@@ -171,7 +158,6 @@
             </div>
         </fieldset>
 
-        <!-- Professional Data -->
         <fieldset class="secao-dados">
             <legend class="titulo-secao">Professional Data</legend>
             <div class="grade-campos">

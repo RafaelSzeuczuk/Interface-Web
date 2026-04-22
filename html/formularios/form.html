@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        input{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+            <input type="email" name="email" placeholder="Insira se email" required>
+            <label for="filhos">Quantidade de Filhos</label>
+            <input type="number" id="filhos" min=0 max=10>
+            <input type="date" min="2026-04-13">
+            <fieldset>
+                <legend>Possui comorbidade?</legend>
+                <input type="radio" name="comorbidade" value="sim">Sim
+                <input type="radio" name="comorbidade" value="nao">Não
+            </fieldset>
+            <fieldset>
+                <legend>Interesse</legend>
+                <label><input type="checkbox" name="interesse" value="html">HTML</label>
+                <label><input type="checkbox" name="interesse" value="css">CSS</label>
+                <label><input type="checkbox" name="interesse" value="js">JavaScript</label>
+            </fieldset>
+            <label>Escolha uma linguagem</label>
+            <select name="linguagem" required>
+                <option value="" disabled>Selecione</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <label>Escolha outra Linguagem</label>
+            <select name="outraLinguagem" required>
+                <optgroup label="front">
+                    <option value="" disabled>Selecione</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                </optgroup>
+                <optgroup label="back">
+                    <option value="" disabled>Selecione</option>
+                <option value="node">NodeJs</option>
+                <option value="laravel">Laravel</option>
+            </optgroup>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        <datalist id="linguagenList">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+        <textarea name="mensagem" rows="5" cols="30" readonly>
+            Contrato de Utilização
+            1.1 Clausula 1
+            1.2 Clausula 2
+        </textarea>
+        <input type="file">
+        <input type="hidden" value="valor_escondido">
+        <input type="button" value="Botap">
+        <button>Botão</button>
+        <input type="search">
+        <input type="range" min="0" max="10">
+        <input type="time">
+        <input type="color">
+    </form>
+</body>
+</html>

@@ -55,6 +55,7 @@
             display: flex;
             align-items: center;
         }
+
         .icone-entrada {
             position: absolute;
             left: 12px;
@@ -99,7 +100,20 @@
             background-color: #164a96;
         }
 
-
+        .icone-user { background-image: url('https://unpkg.com/lucide-static@latest/icons/user.svg'); }
+        .icone-file-text { background-image: url('https://unpkg.com/lucide-static@latest/icons/file-text.svg'); }
+        .icone-calendar { background-image: url('https://unpkg.com/lucide-static@latest/icons/calendar.svg'); }
+        .icone-phone { background-image: url('https://unpkg.com/lucide-static@latest/icons/phone.svg'); }
+        .icone-mail { background-image: url('https://unpkg.com/lucide-static@latest/icons/mail.svg'); }
+        .icone-lock { background-image: url('https://unpkg.com/lucide-static@latest/icons/lock.svg'); }
+        .icone-map-pin { background-image: url('https://unpkg.com/lucide-static@latest/icons/map-pin.svg'); }
+        .icone-home { background-image: url('https://unpkg.com/lucide-static@latest/icons/home.svg'); }
+        .icone-building { background-image: url('https://unpkg.com/lucide-static@latest/icons/building.svg'); }
+        .icone-bell { background-image: url('https://unpkg.com/lucide-static@latest/icons/bell.svg'); }
+        .icone-shopping-cart { background-image: url('https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg'); }
+        .icone-users { background-image: url('https://unpkg.com/lucide-static@latest/icons/users.svg'); }
+        .icone-briefcase { background-image: url('https://unpkg.com/lucide-static@latest/icons/briefcase.svg'); }
+        .icone-linkedin { background-image: url('https://unpkg.com/lucide-static@latest/icons/linkedin.svg'); }
     </style>
 </head>
 <body>
@@ -110,27 +124,27 @@
             <legend class="titulo-secao">Personal Data</legend>
             <div class="grade-campos">
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/user.svg');"></div>
+                    <div class="icone-entrada icone-user"></div>
                     <input type="text" name="nome" class="entrada-texto" placeholder="Full Name">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/file-text.svg');"></div>
+                    <div class="icone-entrada icone-file-text"></div>
                     <input type="text" name="cpf" class="entrada-texto" placeholder="CPF">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/calendar.svg');"></div>
+                    <div class="icone-entrada icone-calendar"></div>
                     <input type="text" name="nascimento" class="entrada-texto" placeholder="Date of Birth">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/phone.svg');"></div>
+                    <div class="icone-entrada icone-phone"></div>
                     <input type="tel" name="telefone" class="entrada-texto" placeholder="Phone Number">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/mail.svg');"></div>
+                    <div class="icone-entrada icone-mail"></div>
                     <input type="password" name="senha" class="entrada-texto" placeholder="Password">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/lock.svg');"></div>
+                    <div class="icone-entrada icone-lock"></div>
                     <input type="password" name="confirmar_senha" class="entrada-texto" placeholder="Password">
                 </div>
             </div>
@@ -140,19 +154,19 @@
             <legend class="titulo-secao">Address</legend>
             <div class="grade-campos">
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/map-pin.svg');"></div>
+                    <div class="icone-entrada icone-map-pin"></div>
                     <input type="text" name="cep" class="entrada-texto" placeholder="ZIP Code (CEP)">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/home.svg');"></div>
+                    <div class="icone-entrada icone-home"></div>
                     <input type="text" name="rua" class="entrada-texto" placeholder="Street">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/building.svg');"></div>
+                    <div class="icone-entrada icone-building"></div>
                     <input type="text" name="bairro" class="entrada-texto" placeholder="Neighborhood">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/bell.svg');"></div>
+                    <div class="icone-entrada icone-bell"></div>
                     <input type="text" name="cidade" class="entrada-texto" placeholder="City">
                 </div>
             </div>
@@ -162,19 +176,19 @@
             <legend class="titulo-secao">Professional Data</legend>
             <div class="grade-campos">
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/shopping-cart.svg');"></div>
+                    <div class="icone-entrada icone-shopping-cart"></div>
                     <input type="text" name="empresa" class="entrada-texto" placeholder="Company">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/users.svg');"></div>
+                    <div class="icone-entrada icone-users"></div>
                     <input type="text" name="cargo" class="entrada-texto" placeholder="Job Title">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/briefcase.svg');"></div>
+                    <div class="icone-entrada icone-briefcase"></div>
                     <input type="text" name="cargo2" class="entrada-texto" placeholder="Job Title">
                 </div>
                 <div class="caixa-entrada">
-                    <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/linkedin.svg'); filter: none;"></div>
+                    <div class="icone-entrada icone-linkedin"></div>
                     <input type="text" name="linkedin" class="entrada-texto" placeholder="LinkedIn URL">
                 </div>
             </div>

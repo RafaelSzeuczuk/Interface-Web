@@ -68,6 +68,15 @@
             pointer-events: none;
         }
 
+        /* Definição dos ícones no CSS em vez de inline */
+        .icone-email {
+            background-image: url('https://unpkg.com/lucide-static@latest/icons/mail.svg');
+        }
+
+        .icone-senha {
+            background-image: url('https://unpkg.com/lucide-static@latest/icons/lock.svg');
+        }
+
         .entrada-texto {
             width: 100%;
             padding: 14px 14px 14px 45px;
@@ -124,25 +133,28 @@
             font-weight: 700;
         }
 
-       
+        @media (max-width: 480px) {
+            .container-login {
+                padding: 30px 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container-login">
-    <div class="avatar-circulo">
-    </div>
+    <div class="avatar-circulo"></div>
     
     <h1 class="titulo-login">Login</h1>
 
     <form action="#" method="POST">
         <div class="caixa-entrada">
-            <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/mail.svg');"></div>
+            <div class="icone-entrada icone-email"></div>
             <input type="email" name="email" class="entrada-texto" placeholder="Email" required>
         </div>
 
         <div class="caixa-entrada">
-            <div class="icone-entrada" style="background-image: url('https://unpkg.com/lucide-static@latest/icons/lock.svg');"></div>
+            <div class="icone-entrada icone-senha"></div>
             <input type="password" name="senha" class="entrada-texto" placeholder="Password" required>
         </div>
 
